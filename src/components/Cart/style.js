@@ -52,4 +52,8 @@ export const StyledCart = styled.div`
 
     color: var(--color-gray-50);
   }
+  @media (min-width: 1024px) {
+    padding: 30px 0;
+    min-width: 20%;
+  }
 `;

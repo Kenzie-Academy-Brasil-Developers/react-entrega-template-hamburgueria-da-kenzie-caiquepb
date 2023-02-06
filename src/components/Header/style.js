@@ -11,4 +11,13 @@ export const StyledHeader = styled.header`
 
   height: 139px;
   background: var(--color-gray-0);
+
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 30px 5% 37px 5%;
+
+  }
 `;

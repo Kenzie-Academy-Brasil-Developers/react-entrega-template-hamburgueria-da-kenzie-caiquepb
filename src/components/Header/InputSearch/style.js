@@ -6,7 +6,7 @@ export const StyledInputSearch = styled.div`
   align-items: center;
   padding: 0px 10px 0px 15px;
 
-  width: 382px;
+  width: 100%;
   height: 60px;
 
   background: var(--color-white);
@@ -15,7 +15,7 @@ export const StyledInputSearch = styled.div`
   border-radius: 8px;
 
   input {
-    width: 222px;
+    width: 100%;
     height: 19px;
 
     border: 0;
@@ -32,7 +32,7 @@ export const StyledInputSearch = styled.div`
   button {
     padding: 0px 20px;
 
-    width: 107px;
+    width: 40%;
     height: 40px;
 
     background: var(--color-primary);
@@ -47,5 +47,10 @@ export const StyledInputSearch = styled.div`
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 20%;
+    height: 60px;
   }
 `;
