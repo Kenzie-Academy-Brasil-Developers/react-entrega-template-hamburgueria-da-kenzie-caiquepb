@@ -1,15 +1,16 @@
 import { Product } from "./Product";
 import { StyledProductList } from "./style";
 
-export const ProductsList = () => {
+export const ProductsList = ({ list, addProductToCart }) => {
   return (
     <StyledProductList>
-      <Product />
-      <Product />
-      <Product />
-      <Product />
-      <Product />
-      <Product />
+      {list.map((product) => (
+        <Product
+          key={product.id}
+          product={product}
+          addProductToCart={addProductToCart}
+        />
+      ))}
     </StyledProductList>
   );
 };
